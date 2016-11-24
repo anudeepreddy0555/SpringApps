@@ -48,7 +48,7 @@ E:\spring apps\SpringMVCMain>mvn eclipse:eclipse
 Finally you just need to Import the project into the workspace by using the 
 Import Existing Projects into Workspace feature from Eclipse, selecting your
 Maven main project directory as the Import root directory and finally select both projects from the Import window.
-For easy building application in eclipse, use .m2 plugin.
+For easy building application in eclipse, use .m2 plugin(issues with eclipse)
 
 References:
 http://www.byteslounge.com/tutorials/how-to-create-a-multiple-module-project-using-maven
