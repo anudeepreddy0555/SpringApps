@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SpringMVCMain.iml" filepath="$PROJECT_DIR$/SpringMVCMain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hibernateAppLib/hibernateAppLib.iml" filepath="$PROJECT_DIR$/hibernateAppLib/hibernateAppLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springAppLib/springAppLib.iml" filepath="$PROJECT_DIR$/springAppLib/springAppLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springapp-war/springapp-war.iml" filepath="$PROJECT_DIR$/springapp-war/springapp-war.iml" />
+    </modules>
+  </component>
+</project>

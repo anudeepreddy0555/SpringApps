@@ -1,38 +1,37 @@
 package com.springapp.lib;
 
+import com.hibernateapp.lib.Person;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import java.util.List;
 
 /**
  * Unit test for simple App.
  */
-public class AppTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
-    }
+public class AppTest{
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
-    }
+    public static void main(String[] args) {
 
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
+
+        PersonDAO personDAO = context.getBean(PersonDAO.class);
+
+        Person person = new Person();
+        person.setName("anudeep"); person.setCountry("India");
+
+        personDAO.save(person);
+
+        System.out.println("Person::"+person);
+
+        List<Person> list = personDAO.list();
+
+        for(Person p : list){
+            System.out.println("Person List::"+p);
+        }
+        //close resources
+        context.close();
     }
 }

@@ -52,3 +52,10 @@ For easy building application in eclipse, use .m2 plugin(issues with eclipse)
 
 References:
 http://www.byteslounge.com/tutorials/how-to-create-a-multiple-module-project-using-maven
+
+
+
+________________________________________________________
+
+creating ORMModule
+mvn archetype:create -DgroupId=com.hibernateapp.lib -DartifactId=hibernateAppLib
